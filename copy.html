@@ -1,0 +1,41 @@
+<textarea class="js-copytextarea" style="height: 300px; margin: 0px; width: 400px;">
+    import pyttsx3
+    import PyPDF2
+    from tkinter.filedialog import *
+    
+    book = askopenfilename()
+    pdfreader = PyPDF2.PdfFileReader(open(book, 'rb'))
+    pages = pdfreader.numPages
+    
+    print ("NOTE : counting start from 0")
+    i = int(input("Enter the page you want to start read:"))
+    
+    print(pages)
+    
+    for num in range(i,pages):
+        text= pdfreader.getPage(num).extractText()
+        
+        print(text)
+        player = pyttsx3.init()
+        player.say(text)
+        player.runAndWait()
+</textarea><br />
+<button class="js-textareacopybtn"><a href="" >Copy it</a></button>
+<script>
+
+var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+copyTextareaBtn.addEventListener('click', function(event) {
+ var copyTextarea = document.querySelector('.js-copytextarea');
+ copyTextarea.select();
+ 
+ try { 
+    var successful = document.execCommand('copy');
+    var msg = successful?'successful':'unsuccessful';
+    console.log('Copying the text' + msg);
+ }catch(err){
+     console.log('oops,unable to copy');
+
+ }
+ alert("copied to clipboard ")
+});
+</script>

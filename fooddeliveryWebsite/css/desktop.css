@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-color: rgb(255, 255, 255); */
+    /* background:rgb(255, 255, 255) url('aurora-5599375_1920.jpg') ; */
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#navbar{
+    display: flex;
+    background-color: rgb(155, 155, 155);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    position: sticky;  
+    top: 0px;
+    padding: 10px;
+    
+    
+}
+#navbar ul{
+    display: flex;
+    font-family:serif;
+    justify-content: center;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-family: serif;
+    
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(250, 249, 248);
+    padding:10px;
+    border-radius: 20px;
+    
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+    
+}
+
+
+
+#home h1{
+    display: flex;
+    padding-top: 10px;
+    color: rgb(54, 51, 51);
+}
+#home p{
+    color: rgb(75, 65, 65);
+    justify-content: center;
+}

@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: sans-serif;
+}
+nav{
+    display: block;
+    background-color:rgba(0, 0, 0, 0.356) ;
+    align-items: center;
+    color:white;
+    width: 100%;
+    position: fixed;
+    top:0%;
+    padding:10px ;
+}
+nav ul{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    font-family:sans-serif;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color:white;
+    padding: 20px;
+}
+nav ul li a:hover{
+    background-color: white;
+    color:black;
+    padding:25px;
+    border-radius: 50px;
+    transition: 0.75s;
+}
+.contener{
+    
+    display:flex;
+    padding: 100px 100px;
+    border-radius: 55px;
+    background-color:rgba(255, 249, 249, 0.2) ;
+    box-shadow: 0 0 60px #ffffff;
+    
+}
+.one a{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px 20px;
+    display: inline-block;
+    color: #800000;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3em;
+    overflow: hidden;
+}
+.one a:hover{
+    color: #111;
+    background-color: #ff1414;
+    border-radius: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 50px #ff0000;
+    transition: 0.7s;
+}
+
+
+.two a{
+    margin-right: 20px;
+    padding: 20px 20px;
+    display: inline-block;
+    color: #008000;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3em;
+    overflow: hidden;
+}
+.two a:hover{
+    color: #111;
+    margin-right: 50px;
+    background-color: #39ff14;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0 0 50px #26ff00;
+}
+.three a{
+    margin-right: 20px;
+    padding: 20px 20px;
+    display: inline-block;
+    color: #002980;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+    
+    font-size: 3em;
+    overflow: hidden;
+}
+.three a:hover{
+    margin-right: 50px;
+    color: #111;
+    background-color: #142bff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0 0 50px #0044ff;
+    
+}

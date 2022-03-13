@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/style.css"/> -->
+    <style>*{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        display:block;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+       
+        font-family: sans-serif;
+    }
+    nav{
+        display: flex;
+        background-color:rgba(0, 0, 0, 0.356) ;
+        align-items: center;
+        color:white;
+        width: 100%;
+        position: fixed;
+        top:0%;
+        padding:10px ;
+    }
+    nav ul{
+        display: flex;
+        font-family: sans-serif;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        font-family:sans-serif;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+        color:white;
+        padding: 20px;
+    }
+    nav ul li a:hover{
+        background-color: white;
+        color:black;
+        padding:25px;
+        border-radius: 50px;
+        transition: 0.75s;
+    }
+    section{
+        background: linear-gradient(to top left ,rgb(0, 255, 200),rgb(4, 0, 255));
+        /* background: linear-gradient(to top left ,rgb(0, 255, 200),rgb(255, 0, 21)); */
+        font-size: larger;
+        font-size: 55px;
+        font-family:'Times New Roman', Times, serif;
+        padding: 100px;
+        text-align-last: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        font-size: large;
+        overflow-wrap: break-word;
+    
+        
+    }
+    #about{
+        height: 100%;
+    }
+    img{
+        width: 100%;
+        margin: 10px;
+        height: 300px;
+    }
+    .logo{
+        height: 400px;
+        float: left;
+        width: 350px;
+    }
+    #school{
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .name{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    #name{
+        font-size: 20px;
+    }
+    
+    #form{
+        display: flex;  
+        width: 400px; 
+        height: 200px;
+        border-radius:50px ;
+        background-color:rgba(97, 91, 91, 0.164); 
+        margin: 100px;
+        margin-left: 290px;
+        padding: 50px 50px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 60px rgb(255, 255, 255);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: larger;
+        color: rgb(255, 255, 255);}
+    from{
+        padding:20px;
+        
+    
+    }
+    .lebal{
+        margin: 10px;
+    }
+    
+    .input{
+        border-radius: 5px;
+        border-color: rgb(23, 23, 104);
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin: 10px;
+    
+    }
+    .input:hover{
+        background-color: rgba(119, 117, 117, 0.541);
+        color: black;
+        transition: 0.25s;
+        border-radius: 15px;
+    }
+    .btn{
+        background-color: rgba(255, 255, 255, 0.658);
+        border-radius: 20px;
+        padding: 10px;
+    
+        color: rgb(0, 0, 0);
+    }
+    .btn:hover{
+        background-color: rgb(18, 35, 189);
+        color: rgb(255, 255, 255);
+        transition: 0.75s;
+        cursor:pointer;
+    }
+    footer{
+        background-color: rgba(3, 3, 3, 0.425);
+        color: white;
+        overflow: hidden;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        
+    }
+    footer div{
+        padding: 10px;
+        text-align-last: center;
+    
+    }</head>
+</style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                
+                <li><a href="/about">ABOUT US</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <div id="form">
+        <form>
+            <div class="label" id="name">Name:<input class="input" type="text" placeholder="Name"></div>
+            <div class="label" id="email">Email:<input class="input" type="email" placeholder="Email"></div>
+            <div class="label" id="feedback">Feedback: Yes:<input name="check" type="radio"> No:<input name="check" type="radio"></div><br>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+<footer>
+<div>Copyright &copy; www.website.com All rights reserved!</div>
+</footer>
+</body>
+</html>

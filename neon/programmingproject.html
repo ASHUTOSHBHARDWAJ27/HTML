@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programming project </title>
+</head>
+<style>
+    body {
+        background: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family:sans-serif;
+
+    }
+
+    @keyframes animation1 {
+        0% {
+            background: linear-gradient(to bottom right, rgb(25, 0, 255), rgb(247, 0, 255));
+        }
+
+        50% {
+            background: linear-gradient(to bottom right, rgb(247, 0, 255), rgb(255, 0, 0));
+        }
+    }
+    .contaner {
+        display: flex;
+        padding: 100px 100px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom right, rgb(25, 0, 255), rgb(247, 0, 255));
+        box-shadow: 0 0 80px rgb(243, 239, 255);
+        
+    }
+
+    .contaner:hover {
+        
+        background: linear-gradient(to bottom right, rgb(25, 0, 255), rgb(247, 0, 255));
+        box-shadow: 0 0 80px rgb(243, 239, 255);
+        animation: animation1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    a {
+        padding: 30px 30px;
+        margin: 30px 30px;
+        font-size: 20px;
+        color: rgb(8, 255, 255);
+    }
+
+    @keyframes animation2 {
+        0% {
+            background: linear-gradient(to top left, rgb(255, 0, 0), rgb(255, 2, 234));
+        }
+
+        
+
+        50% {
+            background: linear-gradient(to bottom right, rgb(25, 0, 255), rgb(247, 0, 255));
+        }
+
+      
+    }
+
+    a:hover {
+        padding: 30px 30px;
+        margin: 30px 30px;
+        background: linear-gradient(to top left, rgb(255, 0, 0), rgb(255, 2, 234));
+        box-shadow: 0 0 60px rgb(255, 0, 255);
+        color: rgb(31, 31, 32);
+        border-radius: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: animation2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+    }
+</style>
+
+<body>
+    <div class="contaner">
+        <div class="content">
+            <a>programming project</a>
+        </div>
+    </div>
+</body>
+
+</html>
