@@ -91,10 +91,11 @@ img{
     width: 400px; 
     height: 200px;
     border-radius:50px ;
-    background-color:rgba(97, 91, 91, 0.164); 
+    background-color:rgba(97, 91, 91, 0.116); 
     margin: 100px;
     margin-left: 290px;
     padding: 50px 50px;
+    filter: blur();
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 60px rgb(255, 255, 255);
